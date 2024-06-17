@@ -22,7 +22,7 @@
 }
 
 .member-list {
-    display: flex;
+   /* display: flex;*/
     padding-top: 40px;
     padding-bottom: 10px;
     padding-left: 60px;
@@ -32,8 +32,9 @@
 
 .member-list li{
     flex-shrink:0;
-    width: 260px;
-    margin-left: 75px;
+    width: 2600px;/*260>2600*/
+    height: 300px;/*new*/
+    margin-left: 0px;/*75>0*/
 }
 
 .member-list li:first-child {
@@ -47,7 +48,7 @@
     }
 
     .member-list li {
-        width: 220px;
-        margin-left: 30px;
+        width: 300px;/*220>300*/
+        margin-left: 0px;/*30>0*/
     }
 }
