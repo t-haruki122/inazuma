@@ -15,7 +15,7 @@
     display: block;
     width: 36px;
     height: 3px;
-    background-color: #000000;
+    background-color: #9410a9;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -37,6 +37,17 @@
     margin-left: 0px;/*75>0*/
 }
 
+dt {
+    font-size: 32px;
+}
+dc {
+    font-size:16px
+}
+
+char_img {
+    max-width: 8%;
+}
+
 .member-list li:first-child {
     margin-left: 0;
 }
@@ -50,5 +61,9 @@
     .member-list li {
         width: 300px;/*220>300*/
         margin-left: 0px;/*30>0*/
+    }
+
+    img {
+        max-width: 50%;
     }
 }
