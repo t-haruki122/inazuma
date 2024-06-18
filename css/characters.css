@@ -44,7 +44,7 @@ dc {
     font-size:16px
 }
 
-char_img {
+.characters img {
     max-width: 8%;
 }
 
@@ -63,7 +63,7 @@ char_img {
         margin-left: 0px;/*30>0*/
     }
 
-    img {
+    .characters img {
         max-width: 50%;
     }
 }
