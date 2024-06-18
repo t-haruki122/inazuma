@@ -23,8 +23,8 @@
     margin-top: 15px;
 }
 
-.feature {
-    display: flex;
+.features {
+    display: block;
     justify-content: space-between;
     width: 930px;
     max-width: 90%;
@@ -34,17 +34,27 @@
     align-items: flex-start;
 }
 
+.feature {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    background-size: cover;
+}
+
 .feature-text {
     max-width: 500px;
+    margin-top: 20px;
     margin-right: 40px;
 }
 
 .reverse {
     flex-direction: row-reverse;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .reverse .feature-text {
-    margin-left: 40px;
+    margin-left: 80px;
     margin-right: 0;
 }
 
