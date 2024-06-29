@@ -22,17 +22,19 @@
 }
 
 .member-list {
-   /* display: flex;*/
+    /* display: flex;*/
     padding-top: 40px;
     padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    overflow: scroll;
+    padding-left: 15%/*60px*/;
+    padding-right: 15%/*60px*/;
+    overflow: hidden /*scroll*/;
+    overflow-wrap:break-word;
+    width:100%;/*new*/
 }
 
 .member-list li{
     flex-shrink:0;
-    width: 2600px;/*260>2600*/
+    width: 100%/*2600px*/;/*260>2600*/
     height: 300px;/*new*/
     margin-left: 0px;/*75>0*/
 }
@@ -40,12 +42,16 @@
 dt {
     font-size: 32px;
 }
+
 dc {
     font-size:16px
 }
 
 .characters img {
-    max-width: 8%;
+    max-width: 200px;
+}
+.characters p {
+    width: 100%;
 }
 
 .member-list li:first-child {
@@ -59,11 +65,12 @@ dc {
     }
 
     .member-list li {
-        width: 300px;/*220>300*/
+        width: 100%/*300px*/;/*220>300*/
+        height: 350px;
         margin-left: 0px;/*30>0*/
     }
 
     .characters img {
-        max-width: 50%;
+        max-width: 200px;
     }
 }
