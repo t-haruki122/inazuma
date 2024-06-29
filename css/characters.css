@@ -1,38 +1,69 @@
-.members {
-    background-color: #f8f8f8;
-    padding-top: 45px;
-    padding-bottom: 55px;
+.title {
+    height: 210px;
+    background-image: url(../images/characters/gensolog.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-size: cover;*/
+    padding-right: 15%;
+    padding-left:  15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-shadow: 1px 1px 10px #511c58;
 }
 
-.members h2 {
+.title h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.characters {
+    background-color: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 55px;
+
+
+    padding-left: 15%/*60px*/;
+    padding-right: 15%/*60px*/;
+}
+
+.characters h2 {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 
-.members h2::after {
+.characters h2::after {
     content: '';
     display: block;
     width: 36px;
     height: 3px;
-    background-color: #9410a9;
+    background-color: #ffffff;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.member-list {
+.characters-list {
     /* display: flex;*/
     padding-top: 40px;
     padding-bottom: 10px;
-    padding-left: 15%/*60px*/;
-    padding-right: 15%/*60px*/;
+    /*padding-left: 15%/*60px*/;
+    /*padding-right: 15%/*60px*/;
     overflow: hidden /*scroll*/;
     overflow-wrap:break-word;
     width:100%;/*new*/
 }
 
-.member-list li{
+.characters-list li{
     flex-shrink:0;
     width: 100%/*2600px*/;/*260>2600*/
     height: 300px;/*new*/
@@ -50,21 +81,31 @@ dc {
 .characters img {
     max-width: 200px;
 }
+
 .characters p {
     width: 100%;
 }
 
-.member-list li:first-child {
+.characters-list li:first-child {
     margin-left: 0;
 }
 
+@media (max-width: 1000px){
+    .title {
+        background-size: cover;
+    }
+}
+
 @media (max-width: 800px) {
-    .member-list {
+    .title {
+        background-size: cover;
+    }
+    .characters {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .member-list li {
+    .characters-list li {
         width: 100%/*300px*/;/*220>300*/
         height: 350px;
         margin-left: 0px;/*30>0*/
