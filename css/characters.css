@@ -54,16 +54,17 @@
 .characters-list {
     padding-top: 40px;
     padding-bottom: 10px;
-    overflow: hidden ;
-    overflow-wrap:break-word;
-    width:100%;/*new*/
+    overflow: hidden;
+    overflow-wrap: break-word;
+    width: 100%; /*new*/
 }
 
-.characters-list li{
+.characters-list li {
     display: flex;
-    flex-shrink:0;
+    flex-shrink: 0;
     width: 100%;
-    height: 300px;/*new*/
+    height: 300px; /*new*/
+    margin-top: 40px;
     margin-left: 0px;
 }
 
@@ -71,13 +72,17 @@ dt {
     font-size: 32px;
 }
 
+dl {
+    padding-left: 20px;
+}
+
 dc {
-    font-size:16px
+    font-size: 16px;
 }
 
 .characters img {
     max-width: 90%;
-    max-height:90%;
+    max-height: 90%;
 }
 
 .characters p {
